@@ -1,0 +1,50 @@
+@import 'variables';
+@import 'mixins';
+
+.infoBlock {
+	display: flex;
+	align-items: center;
+
+	.icon {
+		margin-right: 14px;
+	}
+
+	.text {
+		h5 {
+			font: 700 10px 'Montserrat', sans-serif;
+			text-transform: uppercase;
+			color: $gray4;
+			margin-bottom: 4px;
+		}
+
+		p {
+			font: 500 14px 'Montserrat', sans-serif;
+			color: $gray1;
+		}
+	}
+
+	.textAccent {
+		p {
+			color: $accentColour;
+		}
+	}
+
+	@include mobile() {
+		.icon {
+			margin-right: 6px;
+			height: 15px;
+			width: 15px;
+		}
+
+		.text {
+			h5 {
+				font-size: 8px;
+				margin-bottom: 0;
+			}
+
+			p {
+				font-size: 10px;
+			}
+		}
+	}
+}
