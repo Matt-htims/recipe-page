@@ -64,6 +64,12 @@ export default function Home() {
 				<div>
 					<Ingredients />
 					<Instructions />
+					<p className={styles.source}>
+						Source:{' '}
+						<a href="https://sallysbakingaddiction.com/classic-cheesecake/">
+							https://sallysbakingaddiction.com/classic-cheesecake/
+						</a>
+					</p>
 				</div>
 			</main>
 		</div>

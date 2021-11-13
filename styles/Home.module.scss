@@ -83,6 +83,7 @@
 		border-radius: 0;
 		width: 100%;
 		margin-left: 0;
+		margin-bottom: 32px;
 
 		.cardSection {
 			margin-top: 20px;
@@ -93,5 +94,15 @@
 				margin-bottom: 0;
 			}
 		}
+	}
+}
+
+.source {
+	font: italic 400 16px $mainFont;
+	color: $gray4;
+	margin-top: 50px;
+
+	@include mobile() {
+		font-size: 12px;
 	}
 }
