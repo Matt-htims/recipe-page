@@ -1,0 +1,11 @@
+@import 'variables';
+
+.footer {
+	text-align: center;
+	font: 500 14px $mainFont;
+	color: #828282;
+
+	a {
+		font-weight: 700;
+	}
+}

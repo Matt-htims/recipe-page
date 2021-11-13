@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.scss';
 import InfoBlock from '../components/InfoBlock';
 import Ingredients from '../components/Ingredients';
 import Instructions from '../components/instructions/Instructions';
+import Footer from '../components/Footer';
 
 export default function Home() {
 	return (
@@ -72,6 +73,9 @@ export default function Home() {
 					</p>
 				</div>
 			</main>
+			<footer>
+				<Footer />
+			</footer>
 		</div>
 	);
 }

@@ -101,6 +101,7 @@
 	font: italic 400 16px $mainFont;
 	color: $gray4;
 	margin-top: 50px;
+	margin-bottom: 100px;
 
 	@include mobile() {
 		font-size: 12px;
