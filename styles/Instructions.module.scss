@@ -1,0 +1,37 @@
+@import 'variables';
+@import 'mixins';
+
+.instruction {
+	display: flex;
+	margin-bottom: 22px;
+	.number {
+		margin-right: 15px;
+		height: 36px;
+		width: 36px;
+		background-color: $accentColour;
+		border-radius: 6px;
+		flex: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		p {
+			font: 700 24px $accentFont;
+			color: white;
+			padding-bottom: 7px;
+		}
+	}
+
+	p {
+		font: 400 16px $mainFont;
+		line-height: 24px;
+	}
+}
+
+.instructions {
+	margin-top: 28px;
+	color: $gray1;
+	h2 {
+		font: 700 24px $accentFont;
+		margin-bottom: 32px;
+	}
+}

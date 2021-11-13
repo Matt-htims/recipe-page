@@ -6,11 +6,15 @@
 	max-width: 969px;
 	margin: auto;
 	min-height: 100vh;
+
+	@include mobile() {
+		padding: 32px 12px;
+	}
 }
 
 .header {
 	h1 {
-		font: 700 48px 'Playfair Display', serif;
+		font: 700 48px $accentFont;
 		color: $title;
 		margin-bottom: 12px;
 	}
@@ -26,7 +30,7 @@
 		}
 
 		p {
-			font: italic 500 14px 'Montserrat', sans-serif;
+			font: italic 500 14px $mainFont;
 			color: $gray2;
 		}
 	}
@@ -46,38 +50,48 @@
 
 .main {
 	margin-top: 40px;
-	.card {
-		padding: 42px;
-		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-		border-radius: 12px;
-		width: max-content;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
 
-		.cardSection {
-			margin-top: 43px;
+	@include mobile() {
+		margin-top: 24px;
+		display: block;
+	}
+}
 
-			.cardMargin {
-				margin-bottom: 43px;
-			}
-		}
+.card {
+	padding: 42px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 12px;
+	width: max-content;
+	flex: none;
+	height: max-content;
+	margin-left: 70px;
 
-		@include mobile() {
-			padding: 0;
-			box-shadow: none;
-			border-radius: 0;
-			width: 100%;
+	.cardSection {
+		margin-top: 43px;
 
-			.cardSection {
-				margin-top: 20px;
-				display: flex;
-				justify-content: space-between;
-
-				.cardMargin {
-					margin-bottom: 0;
-				}
-			}
+		.cardMargin {
+			margin-bottom: 43px;
 		}
 	}
 
-	.body {
+	@include mobile() {
+		padding: 0;
+		box-shadow: none;
+		border-radius: 0;
+		width: 100%;
+		margin-left: 0;
+
+		.cardSection {
+			margin-top: 20px;
+			display: flex;
+			justify-content: space-between;
+
+			.cardMargin {
+				margin-bottom: 0;
+			}
+		}
 	}
 }

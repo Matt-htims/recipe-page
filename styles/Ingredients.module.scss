@@ -1,0 +1,31 @@
+@import 'variables';
+@import 'mixins';
+
+.ingredients {
+	color: $gray1;
+	h2 {
+		font: 700 24px $accentFont;
+		margin-bottom: 32px;
+	}
+
+	h3 {
+		font: italic 400 18px $accentFont;
+		margin-bottom: 30px;
+	}
+
+	.graham {
+		margin-bottom: 38px;
+	}
+
+	@include mobile() {
+		h2 {
+			font-size: 18px;
+			margin-bottom: 13px;
+		}
+
+		h3 {
+			font-size: 16px;
+			margin-bottom: 23px;
+		}
+	}
+}

@@ -4,6 +4,8 @@ import styles from '../styles/Home.module.scss';
 
 // Components
 import InfoBlock from '../components/InfoBlock';
+import Ingredients from '../components/Ingredients';
+import Instructions from '../components/instructions/Instructions';
 
 export default function Home() {
 	return (
@@ -59,6 +61,10 @@ export default function Home() {
 						</div>
 					</div>
 				</aside>
+				<div>
+					<Ingredients />
+					<Instructions />
+				</div>
 			</main>
 		</div>
 	);

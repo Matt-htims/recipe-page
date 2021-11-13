@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'mixins';
+
+.checkbox {
+	display: flex;
+	margin-bottom: 15px;
+
+	input {
+		margin-right: 17px;
+	}
+
+	label {
+		font: 400 16px $mainFont;
+		line-height: 25px;
+	}
+
+	@include mobile() {
+		input {
+			margin-right: 8px;
+		}
+
+		label {
+			font-size: 14px;
+		}
+	}
+}
